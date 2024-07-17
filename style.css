@@ -1,0 +1,14 @@
+.gridRow {
+    justify-content: space-between;
+    display: flex;
+    border: 1px solid black;
+}
+
+.cell {
+    height: 25px;
+    border: 1px solid black;
+}
+
+.hoverEffect {
+    background-color: blue;
+}
