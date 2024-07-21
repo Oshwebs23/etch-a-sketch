@@ -22,17 +22,18 @@ function createColumns (cellNum) {
             const newCell = document.createElement ("div");
             newCell.classList.add("cell");
             rows[j].appendChild(newCell);
-
-            
         };
+    };
+
+for (let i=0; i<cells.length; i++) {
+    cells[i].addEventListener("mousedown", () => {
+        const randomColour = Math.floor(Math.random()*16777215).toString(16);
+        cells[i].style.backgroundColor = "#" + randomColour;
+        })
     };
 };
 
 
-const hoverElement = document.getElementById("container");
-    hoverElement.addEventListener('mouseover', () => {
-        hoverElement.classList.add('hoverEffect');
-    });
 
 
 window.onload = defaultGrid();
