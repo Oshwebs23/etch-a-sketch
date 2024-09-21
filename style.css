@@ -1,14 +1,19 @@
+body {
+    padding: 100px;
+    background-color: antiquewhite;
+}
+
 .gridRow {
-    justify-content: space-evenly;
+    justify-content: space-between;
     display: flex;
     border: 1px solid black;
+    width: min-content;
 }
 
 .cell {
     height: 30px;
     width: 80px;
-    border: 1px solid black;
-    padding: 1px;
+    border: 5px solid black;
 }
 
 .hoverEffect {

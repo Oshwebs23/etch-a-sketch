@@ -2,9 +2,16 @@ const container = document.getElementById("container");
 let rows = document.getElementsByClassName("gridRow");
 let cells = document.getElementsByClassName("cell");
 
+let userinput = prompt ()
+
+while (userinput < 2 || userinput > 100 || userinput === undefined || Number(userinput) != userinput || userinput === null) {
+   userinput = prompt ("please enter a number between 2 and 100")
+    
+}
+
 function defaultGrid() {
-    createRows(16);
-    createColumns(16);
+    createRows(userinput);
+    createColumns(userinput);
 };
 
 function createRows (rowNum) {
